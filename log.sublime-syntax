@@ -4,19 +4,18 @@ name: Log
 file_extensions: [log]
 scope: text
 
-# Syntax for highlighing sublime text logs
 #http://stackoverflow.com/a/21914803
 
 contexts:
   main:
-    - match: \b(Timeout|Exception)\b
+    - match: \b[\w\.]*(Timeout|Exception|Error) # ← Add words to highlight here
       scope: invalid
 
-    - match: \[(DEBUG|INFO|WARN)\]
+    - match: \[(ALL|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)\]
       scope: constant.language
 
     - match: \[.*?\]
       scope: comment
 
-    - match: \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3}
-      scope: string      
+    - match: (\d{4}-\d{2}-\d{2}|\d{2}:\d{2}:\d{2},\d{3}) # Date/Time
+      scope: string
