@@ -1,0 +1,22 @@
+%YAML 1.2
+---
+name: Log
+file_extensions: [log]
+scope: text
+
+# Syntax for highlighing sublime text logs
+#http://stackoverflow.com/a/21914803
+
+contexts:
+  main:
+    - match: \b(Timeout|Exception)\b
+      scope: invalid
+
+    - match: \[(DEBUG|INFO|WARN)\]
+      scope: constant.language
+
+    - match: \[.*?\]
+      scope: comment
+
+    - match: \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3}
+      scope: string      
