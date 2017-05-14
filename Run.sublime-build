@@ -1,0 +1,4 @@
+{
+    "shell_cmd": "chmod +x $file && bash -c $file",
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+}
