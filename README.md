@@ -22,3 +22,10 @@ Build system that uses Linux hashbang/shebang
 
 [Read more](http://developer.run/21)
 
+## calc.py/calc.sublime-commands
+
+<img src="http://developer.run/pic/log_sublime_syntax.png"/>
+
+* Copy files `calc.py` and `calc.sublime-commands` to [Sublime Text User Package directory](http://docs.sublimetext.info/en/sublime-text-3/basic_concepts.html#the-packages-directory)
+* Install [FilterPipes](https://packagecontrol.io/packages/FilterPipes) plugin
+
