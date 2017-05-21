@@ -1,6 +1,6 @@
 # Installation
 
-Put required file to your [Sublime Text User Package directory](http://docs.sublimetext.info/en/sublime-text-3/basic_concepts.html#the-packages-directory)
+Open `Preferences`->`Browse Packages...`. Put required file to `User` directory.
 
 ## log.sublime-syntax
 
