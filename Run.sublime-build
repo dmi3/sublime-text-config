@@ -1,4 +1,5 @@
 {
-    "shell_cmd": "chmod +x $file && bash -c $file",
+    // Run only if file starts with hashbang
+    "shell_cmd": "grep -e '^#!' $file && chmod +x $file && bash -c $file",
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 }
