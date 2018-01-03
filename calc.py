@@ -1,3 +1,5 @@
+from FilterPipes import filterpipes
+
 class CalcCommand(filterpipes.FilterPipesCommandBase):
 
     def filter(self, data):
